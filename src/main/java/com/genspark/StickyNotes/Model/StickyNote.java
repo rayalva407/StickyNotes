@@ -14,11 +14,13 @@ public class StickyNote {
     private String title;
     private String body;
 
-    public StickyNote(long id, String title, String body) {
-        this.id = id;
-        this.title = title;
-        this.body = body;
+    public StickyNote() {
     }
+
+//    public StickyNote(String title, String body) {
+//        this.title = title;
+//        this.body = body;
+//    }
 
     public long getId() {
         return id;
