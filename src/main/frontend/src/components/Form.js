@@ -30,7 +30,7 @@ function Form() {
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="title" className='mb-3'>Title</label>
-          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} name="title" className="form-control" placeholder='Type the title of your note here' required/>
+          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} name="title" className="form-control" placeholder='Type the title of your note here' autoFocus required />
         </div>
 
         <div className="mb-4">

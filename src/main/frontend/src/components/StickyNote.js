@@ -14,14 +14,14 @@ function StickyNote({ title, body, id }) {
   }
 
   return (
-    <div className="d-flex flex-column text-dark text-center bg-warning m-3 w-25">
-      <nav className="navbar p-0 bg-warning">
+    <div className="d-flex text-break flex-column text-dark text-center bg-warning m-3 w-25">
+      <div className="navbar navbar-expand-lg p-0 bg-warning">
           <button className="navbar-brand btn btn-link" onClick={handleClick}><i className="bi bi-trash-fill text-danger"></i></button>
-      </nav>
-      <div className="">
+      </div>
+      <div className='container-fluid fst-italic fs-4'>
         <p>{title}</p>
       </div>
-      <div className='p-2'>
+      <div className='container-sm p-2'>
         <p>{body}</p>
       </div>
     </div>
